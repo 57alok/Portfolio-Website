@@ -4,12 +4,26 @@
 <head>
     <title>Alok's Portfolio</title>
     <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <div>
+        <div class="namebox">
             <h1 class="name">ALOK JHA</h1>
             </h1>
         </div>
@@ -18,22 +32,22 @@
             <ul class="socialCon">
                 <li>
                     <a href="#">
-                        <img src="github.png" class="social">
+                        <img src="./asset/github.png" class="social">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="linkedin.png" class="social">
+                        <img src="./asset/linkedin.png" class="social">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="fb.png" class="social">
+                        <img src="./asset/fb.png" class="social">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="instagram.png" class="social">
+                        <img src="./asset/instagram.png" class="social">
                     </a>
                 </li>
 
@@ -41,19 +55,32 @@
             </ul>
         </div>
 
-
-        <nav>
+        <!-- Nav button -->
+        <nav class="static">
             <a href="#HOME" class="button">HOME</a>
             <a href="#aboutMe" class="button">ABOUT</a>
-            <a href="#EDU" class="button">EDUCATION</a>
-            <a href="#SKILLS" class="button">SKILLS</a>
+
+            <a href="#mySkill" class="button">SKILLS</a>
             <a href="#CONTACT" class="button">CONTACT DETAILS</a>
         </nav>
+
+        <div class="dropdown">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <nav class="menu">
+                <a href="#HOME" class="drop">HOME</a>
+                <a href="#aboutMe" class="drop">ABOUT</a>
+
+                <a href="#mySkill" class="drop">SKILLS</a>
+                <a href="#CONTACT" class="drop">CONTACT DETAILS</a>
+            </nav>
+        </div>
+
 
 
     </header>
     <main>
-
+        <!-- About section -->
         <div class="aboutMain" id="aboutMe">
             <section>
                 <h2>HEY THERE!<br />WELCOME TO MY PORTFOLIO</h2>
@@ -70,13 +97,87 @@
                     molestiae similique tempora, quibusdam tenetur consequuntur beatae iste.</p>
             </section>>
         </div>
-        <div class="skillMain">
+        <!-- SKILLS -->
+        <div class="skillMain" id="mySkill">
             <section>
-                <h2><img src="skill.svg" class="skillimg" /> SKILLS</h2>
+                <h2><img src="./asset/skill.svg" class="skillimg" /> SKILLS</h2>
+            </section>
+            <section class="inboxskill">
+
+                <section class="outerskill">
+                    <section class="skill" id="html">HTML
+                    </section>
+                    <section class="skillperc">70%</section>
+                </section>
+                <section class="outerskill">
+                    <section class="skill" id="css">CSS
+                    </section>
+                    <section class="skillperc">40%</section>
+                </section>
+                <section class="outerskill">
+                    <section class="skill" id="js">JS
+                    </section>
+                    <section class="skillperc">20%</section>
+                </section>
+                <section class="outerskill">
+                    <section class="skill" id="c">C
+                    </section>
+                    <section class="skillperc">70%</section>
+                </section>
+                <section class="outerskill">
+                    <section class="skill" id="cpp">C++
+                    </section>
+                    <section class="skillperc">50%</section>
+                </section>
+                <section class="outerskill">
+                    <section class="skill" id="backend">BACKEND
+                    </section>
+                    <section class="skillperc">0%</section>
+                </section>
+            </section>
+
+        </div>
+
+
+        <!-- Experience and education -->
+        <div class="timelineMain">
+
+            <section>
+                <h2><img src="./asset/clock-regular.svg" class="timeimg" /> TIMELINE</h2>
+            </section>
+
+            <section class="timelineCon">
+                <section class="divider">
+                    <section class="mover">
+                        <img src="./asset/jet1.svg" alt="mover" class="fas">
+                    </section>
+                    <img src="./asset/down.svg" alt="down" class="down">
+
+                </section>
+                <section class="timeline b1">
+                    <h6>Higher Secondary<br>ARMY PUBLIC SCHOOL,SUKNA</h6>
+                    <p class="time">April 2019</p>
+                </section>
+                <section class="timeline b2">
+                    <h6>NDA 145</h6>
+                    <p class="time">5 DECEMBER 2020<br>Cleared NDA 145 and SSB interviews</p>
+                </section>
+                <section class="timeline b3">
+                    <h6>B TECH<br>KIIT,Bhubaneshwar</h6>
+                    <p class="time">2020-present<br>Doing my under-grad in IT</p>
+                </section>
+
 
             </section>
         </div>
+
+
+
+
     </main>
+
+
 </body>
+
 
 </html>
